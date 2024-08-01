@@ -4,7 +4,6 @@
 ![Email](https://img.shields.io/badge/Email-571720850@qq.com-blue?) 
 
 The home page of "**Polygenic Basis Seedless Grapes**" can be accessed by clicking [here](https://github.com/zhouyflab/Polygenic_Basis_Seedless_Grapes).
-![Genome Wide Association Study](https://github.com/Immortal2333/Genome_Wide_Association_Study/blob/main/Figure%203.jpg)
 
 ## Data preparation  
 **Input Data**
@@ -72,7 +71,7 @@ pdftoppm -png -singlefile ${name}.assoc.txtp_wald_manhattan.pdf ./manhattan.plot
 pdftoppm -png -singlefile ${name}.assoc.txtp_wald_qq.pdf ./qq.plot
 ```
 ## Others ploting
-
+Please check the tool of [LDBlockShow](https://github.com/BGI-shenzhen/LDBlockShow), and [population analysis pipeline](https://github.com/Immortal2333/Population_Analysis_Pipeline).
 
 # Code availability and Citation
 All scripts could be found in this repository above. If you have any question, please do not hesitate contact us. Xu Wang: 571720850@qq.com
