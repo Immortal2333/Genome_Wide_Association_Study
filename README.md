@@ -1,12 +1,12 @@
-# Genome Wide Association Study
-
+# Genome Wide Association Study 
 ![Update](https://img.shields.io/badge/Update-01/08/2024-green?logo=github)
 ![Author](https://img.shields.io/badge/Author-Xu.Wang-orange)
-![Email](https://img.shields.io/badge/Email-571720850@qq.com-blue?)
+![Email](https://img.shields.io/badge/Email-571720850@qq.com-blue?) 
 
 The home page of "**Polygenic Basis Seedless Grapes**" can be accessed by clicking [here](https://github.com/zhouyflab/Polygenic_Basis_Seedless_Grapes).
+![Genome Wide Association Study](https://github.com/Immortal2333/Genome_Wide_Association_Study/blob/main/Figure%203.jpg)
 
-## Data preparation
+## Data preparation  
 **Input Data**
 * WGS data: `.R1.fastq.gz` and `.R2.fastq.gz`
 * VCF File
@@ -62,8 +62,7 @@ gemma -bfile ${name} -n 1 -miss 0.2 -maf 0.05 -hwe 1e-5 -k ./output/${name}.sXX.
 
 ```
 name='444_geno0.2gq20maf0.005hwe1e-5.id'
-
-# Please ensure your chromosome ID only keeping numbers. Or you can use this code to revise your chromosome numbers.
+# Please ensure your chromosome IDs contain only numbers. Alternatively, you can use the following code to revise your chromosome numbers:
 # for i in {01..19}; do sed -i "s/Chr${i}/${i}/g" ${name}.assoc.txt ;done 
 
 Rscript ./manhattan.R ${name}.assoc.txt p_wald
@@ -72,6 +71,8 @@ Rscript ./manhattan.R ${name}.assoc.txt p_wald
 pdftoppm -png -singlefile ${name}.assoc.txtp_wald_manhattan.pdf ./manhattan.plot
 pdftoppm -png -singlefile ${name}.assoc.txtp_wald_qq.pdf ./qq.plot
 ```
+## Others ploting
+
 
 # Code availability and Citation
 All scripts could be found in this repository above. If you have any question, please do not hesitate contact us. Xu Wang: 571720850@qq.com
